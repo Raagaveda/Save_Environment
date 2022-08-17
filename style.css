@@ -1,0 +1,401 @@
+@import url('htpps://fonts.googleleapis.com/css2?family=Muli&display=swap');
+* {
+    margin: 0;
+	padding: 0;
+    
+    -webkit-box-sizing:border-box;
+			box-sizing: border-box;
+	font-family: sans-serif;
+	
+    
+}
+
+
+ .container {
+    background-color: #145126;
+    display: flex;
+
+
+}
+
+ .panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    flex:0.5;
+    margin:10px;
+    position: relative;
+    transition: flex 0.7s ease-in;  
+}
+
+ .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+  .panel.active{
+  flex: 5;  
+}
+
+ .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width :480px){
+    .container{
+        width:100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+
+.nav .logo {
+	-webkit-box-flex: 1;
+		-ms-flex: 1;
+			flex: 1;
+	margin-left: 100px;
+    
+  }
+  
+   .nav .logo img {
+	width: 100px;
+	-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+  
+  }
+
+ 
+.nav{
+
+    height: 100px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+    background-color: #10401e;
+    line-height: 50px;
+  }
+ .nav ul{   
+    float:right;
+    margin-right: 600px;
+  }
+  .nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+ .nav ul li:hover{
+    background-color:rgb(25, 98, 17);
+  }
+ .nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border-top: 8px solid #3f3221;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .mission{
+    background-color: #daa96df1;
+    border-color: #daa96df1;
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: italic;
+    line-height: inherit;
+    margin-top: 20px;
+    font-family: 'Lora', serif;
+  }
+
+  .box {
+    width: auto;
+    height: 300px;
+    border: 2px solid #daa96df1;
+    margin: 0 auto 15px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    
+  }
+  
+
+ 
+  h1 {
+    overflow: hidden;
+    text-align: center;
+  }
+  h1:before,
+  h1:after {
+    background-color: rgb(156, 69, 29);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+  }
+  
+  h1:before {
+    right: 0.5em;
+    margin-left: -90%;
+  }
+  
+  h1:after {
+    left: 0.5em;
+    margin-right: -90%;
+  }
+
+  .camp{
+    width: auto;
+    height: 680px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: aliceblue;
+
+  }
+
+  #title4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 5rem;
+    border-bottom: 5px solid rgb(18, 99, 30);
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+
+
+
+  .button {
+    background-color: #81cf7a;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    }
+  
+    div.gallery {
+      margin: 5px;
+      border: 1px solid rgb(198, 240, 172);
+      float: left;
+      position: relative;
+      left: 270px;
+      width: 300px;
+     
+    }
+    
+    div.gallery:hover {
+      border: 1px solid rgb(122, 68, 11);
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .image-txt-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      background-color: #81cf7a;
+
+      text-align:center;
+    }
+
+    .btn{
+      background-color: #10270e;
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 30px;
+      position: relative;
+      left:200px;
+      }
+
+
+      .contain{
+        width:auto;
+        background: rgb(180, 225, 155);
+        border-radius: 6px;
+        padding: 20px 60px 30px 40px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        /*position: relative;
+        left:100px;*/
+        }
+        .contain .cont{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+        .contain .cont .left-side{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        position: relative;
+        }
+        .cont .left-side::before{
+        content: '';
+        position: absolute;
+        height: 70%;
+        width: 2px;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #86d65e;
+        }
+        .cont .left-side .details{
+        margin: 14px;
+        text-align: center;
+        }
+        .cont .left-side .details i{
+        font-size: 30px;
+        color: #db671f;
+        margin-bottom: 10px;
+        }
+        .cont .left-side .details .topic{
+        font-size: 18px;
+        font-weight: 500;
+        }
+        .cont .left-side .details .text-one,
+        .cont .left-side .details .text-two{
+        font-size: 14px;
+        color: #0b1805;
+        }
+        .contain .cont .right-side{
+        width: 75%;
+        margin-left: 75px;
+        }
+        .cont .right-side .topic-text{
+        font-size: 23px;
+        font-weight: 600;
+        color: #267b3e;
+        }
+        .right-side .input-box{
+        height: 50px;
+        width: 100%;
+        margin: 12px 0;
+        }
+        .right-side .input-box input,
+        .right-side .input-box textarea{
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        background: #F0F1F8;
+        border-radius: 6px;
+        padding: 0 15px;
+        resize: none;
+        }
+        .right-side .message-box{
+        min-height: 110px;
+        }
+        .right-side .input-box textarea{
+        padding-top: 6px;
+        }
+        .right-side .but{
+        display: inline-block;
+        margin-top: 12px;
+        }
+        .right-side .but input[type="but"]{
+        color: #fff;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background: #267b3e;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+        .but input[type="but"]:hover{
+        background: #267b3e;
+        }
+        
+        @media (max-width: 950px) {
+        .contain{
+          width: 90%;
+          padding: 30px 40px 40px 35px ;
+        }
+        .contain .cont .right-side{
+         width: 75%;
+         margin-left: 55px;
+        }
+        }
+        @media (max-width: 820px) {
+        .contain{
+          margin: 40px 0;
+          height: 100%;
+        }
+        .contain .cont{
+          flex-direction: column-reverse;
+        }
+         .contain .cont .left-side{
+         width: 100%;
+         flex-direction: row;
+         margin-top: 40px;
+         justify-content: center;
+         flex-wrap: wrap;
+         }
+         .contain .cont .left-side::before{
+         display: none;
+         }
+         .contain .cont .right-side{
+         width: 100%;
+         margin-left: 0;
+         }
+        }
